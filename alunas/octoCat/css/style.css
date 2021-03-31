@@ -33,6 +33,19 @@ body {
   font-family: 'Noto Sans JP', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+main a {
+  color: aqua;
+}
 ul > li {
   list-style: none;
 }
@@ -51,16 +64,43 @@ h1 {
   color:rgb(100, 50, 255);
   color: chartreuse;
 }
+
+textarea {
+  width: 300px;
+  height: 200px;
+}
+
+footer {
+  height: 75px;
+  color: #333;
+  background-color: salmon;
+}
+
+.navegacao {
+  background-color: springgreen;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 75px;
+  position: fixed;
+}
+
+.navegacao__lista {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
 .titulo {
   text-align: center;
   font-size: 36px;
   padding: 10px;
 }
 
-.cabecalho__titulo {
+.cabecalho__titulo, .navegacao {
   color: #fff;
 }
-
 
 .cabecalho__conteudo {
     padding: 75px;
@@ -116,4 +156,25 @@ h1 {
 }
 .green{
   background-color: green;
+}
+
+.formulario {
+  text-align: center;     
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.formulario > div {
+  padding: 20px;
+}
+
+.rotulo--block {
+  display:block;padding-bottom: 5px;
+}
+
+/* Até 50px faça isso */
+@media (max-width: 650px){
 }
